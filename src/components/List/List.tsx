@@ -9,7 +9,7 @@ type ListProps = {
 
 function List({ listData, setSelectedProductId }: ListProps) {
   return (
-    <ul>
+    <ul className="flex-grow lg:flex-grow-0 min-w-[25rem]">
       {listData.products?.map((product) => (
         <ListItem
           key={product.id}

@@ -12,7 +12,11 @@ function Dropdown({ options, value, onChange }: DropdownProps) {
   };
 
   return (
-    <select value={value} onChange={handleChange}>
+    <select
+      className="border border-gray-400 rounded-md sticky top-0 p-2"
+      value={value}
+      onChange={handleChange}
+    >
       {options.map((option, index) => (
         <option key={index} value={option}>
           {option}

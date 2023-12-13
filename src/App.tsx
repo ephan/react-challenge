@@ -14,7 +14,7 @@ const INITIAL_INDEX = -1;
 const INITIAL_IMAGE_SRC = '';
 const PAGE_SIZE = 10;
 
-// TODO: Refactor to use RSC or GSSP to fetch and hydrate data
+// TODO: Refactor to use Next.js - RSC or GSSP to fetch and hydrate data
 export default function App() {
   const [page, setPage] = React.useState(0);
   const { data, isLoading, isError } = useProducts({ page });
